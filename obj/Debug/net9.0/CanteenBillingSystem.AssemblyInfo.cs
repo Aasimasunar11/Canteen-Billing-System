@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CanteenBillingSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fdb4719048de070b71b7ba2f780c1e2c4f7cde3")]
 [assembly: System.Reflection.AssemblyProductAttribute("CanteenBillingSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CanteenBillingSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
