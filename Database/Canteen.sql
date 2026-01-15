@@ -1,0 +1,33 @@
+CREATE DATABASE CanteenDB;
+GO
+USE CanteenDB;
+
+CREATE TABLE Users (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Username NVARCHAR(50) NOT NULL,
+    Password NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Products (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL,
+    Price DECIMAL(18,2) NOT NULL
+);
+
+CREATE TABLE Bills (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    BillDate DATETIME NOT NULL,
+    TotalAmount DECIMAL(18,2) NOT NULL
+);
+
+CREATE TABLE BillItems (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    BillId INT NOT NULL,
+    ProductId INT NOT NULL,
+    Quantity INT NOT NULL,
+    SubTotal DECIMAL(18,2) NOT NULL,
+    FOREIGN KEY (BillId) REFERENCES Bills(Id),
+    FOREIGN KEY (ProductId) REFERENCES Products(Id)
+);
+
+INSERT INTO Users (Username, Password) VALUES ('ram', '1234ram');
